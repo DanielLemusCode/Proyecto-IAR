@@ -1,10 +1,13 @@
-list = [10, 23, 45, 22, 67, 45]
+from stat import Statistics
 
-s = sum(list)
-print(s)
+Lista1 = [10, 23, 45, 22, 67, 45]
+Lista2 = [1, 2, 3, 4, 5]
+Lista3 = [100, 200, 300, 400, 500]
 
-longitud = len(list)
-print(longitud)
+stats1 = Statistics(Lista1)
+stats2 = Statistics(Lista2)
+stats3 = Statistics(Lista3)
 
-prom = s / longitud
-print(prom)
+print(stats1.sum())
+print(stats2.length())
+print(stats3.average())
